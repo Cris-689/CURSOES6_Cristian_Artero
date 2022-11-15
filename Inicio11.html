@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio 11</title>
+    <link rel="stylesheet" href="./Inicio11.css">
+</head>
+<body>
+    <div class="numeros">
+        <div id="RESTA"></div>
+        <div id="MULTIPLICACION"></div>
+        <script>
+        let num1, num2;
+        dato = window.prompt("Introduce el primer numero", "0");
+        num1 = parseInt(dato);
+        dato = window.prompt("Introduce el segundo numero", "0");
+        num2 = parseInt(dato);
+        let resta = num1 - num2;
+        let multiplicacion = num1 * num2;
+        document.getElementById("RESTA").innerHTML = (`La resta es ${resta}`);
+        document.getElementById("MULTIPLICACION").innerHTML = (`La multiplicacion es ${multiplicacion}`);    
+        </script>
+    </div>
+</body>
+</html>

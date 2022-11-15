@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio 10</title>
+    <link rel="stylesheet" href="./Inicio10.css">
+</head>
+<body>
+    <div id="NUMERO"></div>
+    <script>
+    let num1, num2;
+    dato = window.prompt("Introduce el primer numero", "0");
+    num1 = parseInt(dato);
+    dato = window.prompt("Introduce el segundo numero", "0");
+    num2 = parseInt(dato);
+    let resultado = num1 - num2;
+    document.getElementById("NUMERO").innerHTML = (`${resultado}`);    
+    </script>
+</body>
+</html>

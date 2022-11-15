@@ -1,0 +1,15 @@
+/*
+    Cristian Artero Molina
+    15/11/2022
+*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+#NUMERO{
+    text-align: center;
+    width: 100%;
+    font-size: 100px;
+    color: royalblue;
+    background-color: crimson;
+}
