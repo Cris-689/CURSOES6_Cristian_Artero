@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones 9</title>
+    <script>
+        function Suma(numero1, numero2) {
+            resultado = numero1 + numero2;
+            document.getElementById("salida").innerHTML = `El resultado es ${resultado}`;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Función con dos parámetros</h1>
+    <p id="salida">Aquí el resultado</p>
+    <script>
+        var num1 = parseInt(window.prompt('Introduce el primer numero',));
+        var num2 = parseInt(window.prompt('Introduce el segundo numero',));
+        Suma(num1, num2);
+    </script>
+</body>
+
+</html>
