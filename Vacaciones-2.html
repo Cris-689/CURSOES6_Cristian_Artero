@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function jugarPiedraPapelTijeras(opcion) {
+        var opciones = ["piedra", "papel", "tijeras"];
+        var jugadaOrdenador = opciones[Math.floor(Math.random() * opciones.length)];
+        if (opcion === jugadaOrdenador) {
+            alert("Empate");
+        } else if (
+            (opcion === "piedra" && jugadaOrdenador === "tijeras") ||
+            (opcion === "papel" && jugadaOrdenador === "piedra") ||
+            (opcion === "tijeras" && jugadaOrdenador === "papel")
+        ) {
+            alert("Ganaste");
+        } else {
+            alert("Perdiste");
+        }
+    }
+
+</script>
+
+</html>
+
+<body>
+    <p id="resultado"></p>
+    <button onclick="jugarPiedraPapelTijeras('piedra');">piedra</button>
+    <button onclick="jugarPiedraPapelTijeras('papel');">papel</button>
+    <button onclick="jugarPiedraPapelTijeras('tijeras');">tijeras</button>
+</body>

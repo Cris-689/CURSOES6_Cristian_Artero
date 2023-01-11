@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let Nombre, Rango1, Rango2, Rango3, TotalHoras, Precio1, Precio2, Precio3;
+        do{
+            TotalHoras = window.prompt('¿Cantidad de horas trabajadas?', '');
+            TotalHoras = parseInt(TotalHoras);
+            if (TotalHoras > 12) {
+                alert("El maximo de horas extra es 12")                
+            }
+            if (isNaN(TotalHoras)) {
+                    alert("pon un numero mij@")
+            }
+            if (TotalHoras < 0) {
+                    alert("¿Trabajas en negativo o que?")
+            }
+        } while (isNaN(TotalHoras) || TotalHoras > 12 || TotalHoras < 0);
+        do {
+            Nombre = window.prompt('Nombre Completo', '');
+            do {
+                Rango1 = window.prompt('De 20:00 a 00:00', '');
+                Rango1 = parseInt(Rango1);
+                if (Rango1 > 4) {
+                    alert("¿Comprimis horas o que?")                    
+                }
+                if (Rango1 < 0) {
+                    alert("¿Trabajas en negativo o que?")
+                }
+                if (isNaN(Rango1)) {
+                    alert("pon un numero mij@")
+                }
+            } while (Rango1 > 4 || Rango1 < 0);
+            do {
+                Rango2 = window.prompt('De 00:00 a 6:00', '');
+                Rango2 = parseInt(Rango2);
+                if (Rango2 > 6) {
+                    alert("¿Comprimis horas o que?")                    
+                }
+                if (Rango2 < 0) {
+                    alert("¿Trabajas en negativo o que?")
+                }
+                if (isNaN(Rango2)) {
+                    alert("pon un numero mij@")
+                }
+            } while (Rango2 > 6 || Rango2 < 0);
+            do {
+                Rango3 = window.prompt('De 6:00 a 8:00', '');
+                Rango3 = parseInt(Rango3)
+                if (Rango3 > 2) {
+                    alert("¿Comprimis horas o que?")                    
+                }
+                if (Rango3 < 0) {
+                    alert("¿Trabajas en negativo o que?")
+                }
+                if (isNaN(Rango3)) {
+                    alert("pon un numero mij@")
+                }
+            } while (Rango3 > 2 || Rango3 < 0)
+            if (Rango1 + Rango2 + Rango3 !== TotalHoras) {
+                alert("El numero total de horas insertado y la suma de las horas insertadas no coincide")
+            }
+        } while (Rango1 + Rango2 + Rango3 !== TotalHoras);
+        document.write(`<p>Tu nombre es ${Nombre}`);
+        Precio1 = Rango1*25
+        document.write(`<p>Horas extra de 20:00 a 00:00 = ${Rango1} x 25€ = ${Precio1} €`);
+        Precio2 = Rango2*40
+        document.write(`<p>Horas extra de 00:00 a 6:00 = ${Rango2} x 40€ = ${Precio2} €`);
+        Precio3 = Rango3*20
+        document.write(`<p>Horas extra de 6:00 a 8:00 = ${Rango3} x 20€ = ${Precio3} €`);
+    </script>  
+    <h1 id="1l"></h1>
+    <h1 id="2l"></h1>
+    <h1 id="3l"></h1>
+    <h1 id="4l"></h1>
+</body>
+</html>
